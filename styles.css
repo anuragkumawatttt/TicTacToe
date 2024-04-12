@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding:0;
+    background-color: black;
+}
+nav ul{
+ list-style-type: none;
+}
+nav {
+    background-color: rgba(14, 9, 9, 0.803);
+    color: rgb(0, 244, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 30px;
+    padding: 0 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.game_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+margin-top: 50px;
+padding: 20px;
+}
+.container {
+display: grid;
+grid-template-columns: repeat(3, 10vw);
+grid-template-rows: repeat(3, 10vw);
+position: relative;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(19, 251, 27);
+    font-size: 8vw;
+    font-weight: bolder;
+    color:rgb(19, 251, 27)
+
+}
+.box:hover {
+    background-color: white;
+    cursor: pointer;
+}
+.bt-0 {
+border-top: 0;
+}
+.bl-0 {
+border-left: 0;
+}
+.br-0 {
+border-right: 0;
+}
+.bb-0 {
+border-bottom: 0;
+}
+.info {
+    padding: 0 35px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(19, 251, 27);
+    margin-top: 40px;
+}
+.info h1 {
+    font-size: 2.5rem;
+}
+.imgbox img {
+    width: 0;
+    
+    transition: width 1s ease-in-out;
+    
+}
+#reset {
+    color: rgb(19, 251, 27);
+    padding: 5px 10px;
+    margin: 0 30px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+}
+.imgbox {
+    margin: 20px 0;
+}
+.turn {
+    margin: 10px 0;
+}
+.infotext {
+    font-size: 30px;
+}
+@media screen and (max-width: 950px) {
+    .game_container{
+        flex-wrap: wrap;
+    }
+    .info h1 {
+        font-size: 1.5rem;
+    }
+    .container {
+        
+grid-template-columns: repeat(3, 15vw);
+grid-template-rows: repeat(3, 15vw);
+    }
+    .line {
+        display: none;
+
+    }
+}
+    .line {
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    transition: width 1s ease-in-out;
+
+}
+
+
